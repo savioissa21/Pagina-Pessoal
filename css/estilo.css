@@ -1,0 +1,574 @@
+body{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4;
+  background-size: cover; /* Faz a imagem cobrir a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* Mantém a imagem fixa quando a página rola */
+  min-height: 100vh;
+  margin: 0; /* Remove o padrão de margem do body */
+  background-color: rgb(0, 0, 0); /* Cor de fundo alternativa */
+}
+/* From Uiverse.io by vikas7754 */ 
+.container {
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  --sz: 15px;
+  --c0: #000;
+  --c1: #44434a;
+  --ts: 50% / calc(var(--sz) * 8) calc(var(--sz) * 16);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  --dot: var(--c1) 0 calc(var(--sz) * 0.78),
+    #fff0 calc(calc(var(--sz) * 0.78) + 1px) 100%;
+  --dot2: radial-gradient(circle at 90% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 0%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 0%, var(--dot)) var(--ts);
+  --cg1: conic-gradient(from -90deg at 5% 51%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg2: conic-gradient(from -90deg at 25% 50%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg3: conic-gradient(
+      from -90deg at 30% 38.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg4: conic-gradient(
+      from -90deg at 50% 37.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg5: conic-gradient(from -90deg at 55% 26%, var(--c0) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg6: conic-gradient(from -90deg at 75% 25%, var(--c1) 0 90deg, #fff0 0 100%)
+    var(--ts);
+  --cg7: conic-gradient(
+      from -90deg at 80% 13.5%,
+      var(--c0) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+  --cg8: conic-gradient(
+      from -90deg at 100% 12.5%,
+      var(--c1) 0 90deg,
+      #fff0 0 100%
+    )
+    var(--ts);
+
+  background: var(--dot2), var(--dot2),
+    radial-gradient(circle at 90% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 100%, var(--dot)) var(--ts),
+    radial-gradient(circle at 90% 12.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 65% 25%, var(--dot)) var(--ts),
+    radial-gradient(circle at 40% 37.5%, var(--dot)) var(--ts),
+    radial-gradient(circle at 15% 50%, var(--dot)) var(--ts), var(--cg1),
+    var(--cg1), var(--cg2), var(--cg2), var(--cg3), var(--cg3), var(--cg4),
+    var(--cg4), var(--cg5), var(--cg5), var(--cg6), var(--cg6), var(--cg7),
+    var(--cg7), var(--cg8), var(--cg8),
+    linear-gradient(-45deg, #fff0 0 32.25%, #0002 50%, #000 77.5%) var(--ts),
+    linear-gradient(-45deg, #fff0 0 32.25%, #000 60%) var(--ts),
+    repeating-linear-gradient(90deg, var(--c0) 0 5%, var(--c1) 0 25%) var(--ts);
+}
+
+
+#elemento {
+  color: rgb(60, 150, 170);
+  font-size: 35px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#perfil {
+  width: 150px;
+  border-radius: 50%;
+  max-width: 288px;
+  object-fit: cover;
+  height: 150px;
+  margin: 1rem auto;
+  display: block;
+  border: 1px solid rgb(60, 150, 170);
+}
+#cabecalho,
+a {
+  color: rgb(60, 150, 170);
+  font-family: "Verdana", sans-serif;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 10px; /* Melhorar o espaçamento */
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+#cabecalho a:hover {
+  background-color: rgba(60, 150, 170, 0.2); /* Efeito de hover nos links */
+}
+
+#info,
+#infoPessoal {
+  font-size: 16px;
+  text-align: center;
+  color: aliceblue;
+  margin: 10px 0; /* Melhorar o espaçamento */
+}
+
+.projetos {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0;
+  color: rgb(60, 150, 170);
+}
+#academico {
+  background-color: #00485d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+#academico h2 {
+  color: rgb(60, 150, 170);
+  margin-bottom: 15px;
+}
+
+.info-academica h4 {
+  color: aliceblue;
+  font-size: 24px;
+}
+
+.info-academica p {
+  color: aliceblue;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+#hobbies {
+  background-color: #00485d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.foto-hobbies {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; 
+}
+
+.foto-hobbies:hover {
+  transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+
+#hobbies h2 {
+  color: rgb(60, 150, 170);
+  margin-bottom: 15px;
+}
+
+.info-hobbies h4 {
+  color: aliceblue;
+  font-size: 24px;
+}
+
+.info-hobbies p {
+  color: aliceblue;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project {
+  width: 300px;
+  background-color: #cacacc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+  color: bisque;
+  transition: transform 0.3s; /* Adicionando animação */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.Pag,
+.desPag {
+  padding: 15px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(60, 150, 170);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto 15px;
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.link:hover {
+  background-color: #ffffff; /* Mudar fundo no hover */
+  color: rgb(60, 150, 170); /* Mudar cor do texto no hover */
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+  }
+}
+
+.subprojetos {
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+  display: block;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+.cards{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.infor{
+  color: black;
+}
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  padding: 10px;
+  background-color: rgb(60, 150, 170);;
+  color: #697e91;
+  max-width: 300px;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #425275;
+}
+
+.plan .inner {
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #ecf0ff;
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .pricing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #bed6fb;
+  border-radius: 99em 0 0 99em;
+  display: flex;
+  align-items: center;
+  padding: 0.625em 0.75em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #425475;
+}
+
+.plan .pricing small {
+  color: #707a91;
+  font-size: 0.75em;
+  margin-left: 0.25em;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #425675;
+}
+
+.plan .title + * {
+  margin-top: 0.75rem;
+}
+
+.plan .info + * {
+  margin-top: 1rem;
+}
+
+.plan .features {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan .features li + * {
+  margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+  background-color: #1FCAC5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.plan .features .icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.plan .features + * {
+  margin-top: 1.25rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.plan .button {
+  background-color: #6558d3;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 0.625em 0.75em;
+  text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+  background-color: #4133B7;
+}
+
+#forms{
+  display: flex;
+  justify-content: center;
+
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+footer {
+  color: rgb(0, 0, 0);
+  background: #00485d;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centraliza os ícones */
+  margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.redes-sociais a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #797171;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+  background-color: #4acbe2;
+  color: #fff;
+  transform: translateY(-2px);
+}
